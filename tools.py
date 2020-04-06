@@ -10,8 +10,8 @@ with open('stats.json') as f:
 
 
 def save(i, h):
-    project = Project.objects.get(name="Dictionary-Translation")
-    component = Component(name=i, slug=i, project=project, vcs="git", repo="weblate://Dictionary-Translation/a", repoweb="",
+    project = Project.objects.get(name="Dictionary")
+    component = Component(name=i, slug=i, project=project, vcs="git", repo="weblate://Dictionary/a", repoweb="",
                           branch="master", filemask=h+"/"+i+"/*.json", template=h+'/'+i+"/en.json", new_base="", file_format="json", new_lang="add")
     component.save()
     print(' --end save --')
