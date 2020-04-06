@@ -26,4 +26,5 @@ def readJSON(a):
         save(x, a)
 
 
-readJSON('a')
+# readJSON('a')
+save('a1','a')
